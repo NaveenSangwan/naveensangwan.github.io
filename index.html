@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altus Dental</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #005f73, #0a9396);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        header img {
+            max-width: 50px;
+            border-radius: 50%;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        section {
+            padding: 20px 0;
+        }
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        h2 {
+            color: #0a9396;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e0e0e0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-info p {
+            flex: 1 1 45%;
+            margin: 5px 0;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            max-height: 600px;
+            overflow: hidden;
+        }
+        .feature img {
+            max-width: 30%;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+        .feature .caption {
+            flex: 1;
+            text-align: left;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img {
+            height: auto;
+            object-fit: contain;
+        }
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .about-container .about-us {
+            flex: 2;
+        }
+        .about-container .doctor-info {
+            flex: 1;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Altus Dental Logo">
+        <h1>Altus Dental</h1>
+    </header>
+    <div class="container">
+        <section id="about">
+            <div class="about-container">
+                <div class="about-us">
+                    <h2>About Us</h2>
+                    <p>Welcome to Altus Dental. We provide top-notch dental services to ensure your smile stays bright and healthy.</p>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Renu Malik</h3>
+                    <p>Root Canal Specialist and Implantologist</p>
+                    <p>Phone: +91-8826054571, +91-8076941725</p>
+                    <p>Address: 119 Suncity Market, Suncity Sector 54, Gurugram 122003</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>General Dentistry</li>
+                <li>Dental Surgery</li>
+                <li>Dental Implant</li>
+                <li>Oral Hygiene</li>
+                <li>Teeth Whitening</li>
+            </ul>
+        </section>
+        <div class="slider">
+            <div class="slides">
+                <section id="special" class="feature slide">
+                    <img src="images/smile.png" alt="Smile Image">
+                    <div class="caption">
+                        <p>Dreaming of a perfect smile? Discover the magic of Damon braces—a modern twist on traditional orthodontics. Unlike conventional braces, Damon braces use a slide mechanism that reduces pressure and discomfort, leading to faster results and fewer adjustments. 🚀</p>
+                        <p>Say goodbye to tight elastics and hello to a more comfortable orthodontic experience. Whether you're correcting crooked teeth or improving your bite, Damon braces offer efficiency and aesthetics, making your journey to a confident smile smoother than ever. 😁✨</p>
+                        <p>Ready to embrace your smile transformation?</p>
+                    </div>
+                </section>
+                <section id="appreciation" class="feature slide">
+                    <img src="images/teeth.png" alt="Teeth Image">
+                    <div class="caption">
+                        <p>We truly appreciate your continuous support and trust in us. We'll continue striving to provide exceptional services and outstanding dental care to make every interaction with us remarkable.</p>
+                    </div>
+                </section>
+                <section id="cleaning" class="feature slide">
+                    <img src="images/cleaning.png" alt="Cleaning Image">
+                    <div class="caption">
+                        <p>Have you had a teeth cleaning this year? Professional dental cleanings aren’t just for keeping your smile bright; they can have a significant impact on your general health. Insufficient oral hygiene has been linked to several serious illnesses. Associated medical and dental issues include bone loss, cardiovascular disease, strokes, cancers, and many other problems. Brushing and flossing at home are essential, but to ensure teeth are healthy and thoroughly clean, you should schedule regular check-ups with your dentist. Here are some reasons professional cleanings are so important.</p>
+                    </div>
+                </section>
+                <section id="mutilated" class="feature slide">
+                    <img src="images/mutilated.png" alt="Mutilated Tooth Image">
+                    <div class="caption">
+                        <p>Patient had a badly mutilated tooth. He was advised removal of the tooth followed by implant by the other dentist. The patient was not satisfied and came to us for a better treatment plan. We saved the tooth by Root canal procedure followed by core build-up and cap over the tooth. Patient was highly satisfied when his natural tooth has been saved by a cost effective better treatment plan. We again succeeded living upto our patient's expectations by creating beautiful smiles and that too with cost effective treatment plans.</p>
+                    </div>
+                </section>
+                <section id="fractured" class="feature slide">
+                    <img src="images/fractured.png" alt="Fractured Tooth Image">
+                    <div class="caption">
+                        <p>Patient reported with fractured upper front tooth complaining pain and sensitivity. Patient's History revealed traumatic injury to upper anterior tooth due to fall previous day. Ellis class 8 fracture managed with Root Canal, Crown lengthening with Electrosurgery, post and Corebuildup followed by crown.</p>
+                    </div>
+                </section>
+                <!-- Add slides for each image under images/gallery -->
+                <section id="gallery1" class="feature slide">
+                    <img src="images/gallery/Screenshot from 2025-02-28 13-16-15.png" alt="Gallery Image 1">
+                </section>
+                <section id="gallery2" class="feature slide">
+                    <img src="images/gallery/Screenshot from 2025-02-28 13-16-26.png" alt="Gallery Image 2">
+                </section>
+                <section id="gallery3" class="feature slide">
+                    <img src="images/gallery/Screenshot from 2025-02-28 13-16-33.png" alt="Gallery Image 3">
+                </section>
+                <section id="gallery4" class="feature slide">
+                    <img src="images/gallery/Screenshot from 2025-02-28 13-16-39.png" alt="Gallery Image 4">
+                </section>
+                <section id="gallery5" class="feature slide">
+                    <img src="images/gallery/Screenshot from 2025-02-28 13-17-00.png" alt="Gallery Image 5">
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Altus Dental. All rights reserved.</p>
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 3000);
+    </script>
+</body>
+</html>
